@@ -1,14 +1,15 @@
 {
-  "name": "serve",
-  "version": "13.0.2",
+  "name": "docsp",
+  "version": "13.0.3",
   "description": "Static file serving and directory listing",
   "scripts": {
+    "start": "node ./bin/serve.js",
     "test": "yarn lint",
-    "lint": "zeit-eslint --ext .jsx,.js .",
-    "lint-staged": "git diff --diff-filter=ACMRT --cached --name-only '*.js' '*.jsx' | xargs zeit-eslint"
+    "lint": "zeit-eslint --ext .jsx,.js ."
   },
   "files": [
-    "bin"
+    "bin",
+    "dist"
   ],
   "repository": "vercel/serve",
   "bin": {
@@ -23,6 +24,7 @@
   "author": "leo",
   "license": "MIT",
   "devDependencies": {
+    "@zeit/eslint-config-base": "1.0.0",
     "@zeit/eslint-config-node": "0.3.0",
     "@zeit/git-hooks": "0.1.4",
     "eslint": "5.4.0"

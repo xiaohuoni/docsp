@@ -428,7 +428,10 @@ const loadConfig = async (cwd, entry, args) => {
 	}
 
 	const cwd = process.cwd();
-	const entry = args._.length > 0 ? path.resolve(args._[0]) : cwd;
+	const distPath = path.join(__dirname, '../dist');
+
+	// const entry = args._.length > 0 ? path.resolve(args._[0]) : cwd;
+	const entry = distPath;
 
 	const config = await loadConfig(cwd, entry, args);
 
