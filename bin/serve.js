@@ -435,16 +435,16 @@ const loadConfig = async (cwd, entry, args) => {
 
 	const config = await loadConfig(cwd, entry, args);
 
-	if (args['--single']) {
-		const {rewrites} = config;
-		const existingRewrites = Array.isArray(rewrites) ? rewrites : [];
+	
+	const {rewrites} = config;
+	const existingRewrites = Array.isArray(rewrites) ? rewrites : [];
 
-		// As the first rewrite rule, make `--single` work
-		config.rewrites = [{
-			source: '**',
-			destination: '/index.html'
-		}, ...existingRewrites];
-	}
+	// As the first rewrite rule, make `--single` work
+	config.rewrites = [{
+		source: '**',
+		destination: '/index.html'
+	}, ...existingRewrites];
+	
 
 	if (args['--symlinks']) {
 		config.symlinks = true;
