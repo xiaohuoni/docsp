@@ -1,0 +1,4 @@
+[submodule "dist/ant-design-mobile"]
+	path = dist/ant-design-mobile
+	url = https://github.com/ant-design/ant-design-mobile.git
+	branch = gh-pages
