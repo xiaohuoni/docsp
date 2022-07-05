@@ -1,7 +1,7 @@
 {
   "name": "docsp",
-  "version": "13.0.3",
-  "description": "Static file serving and directory listing",
+  "version": "13.0.4",
+  "description": "docs preview",
   "scripts": {
     "start": "node ./bin/serve.js",
     "test": "yarn lint",
@@ -11,15 +11,13 @@
     "bin",
     "dist"
   ],
-  "repository": "vercel/serve",
+  "repository": "xiaohuoni/serve",
   "bin": {
     "serve": "./bin/serve.js"
   },
   "keywords": [
-    "now",
-    "serve",
-    "micro",
-    "http-server"
+    "antd-mobile",
+    "docs"
   ],
   "author": "leo",
   "license": "MIT",

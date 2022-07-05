@@ -428,7 +428,7 @@ const loadConfig = async (cwd, entry, args) => {
 	}
 
 	const cwd = process.cwd();
-	const distPath = path.join(__dirname, '../dist');
+	const distPath = path.join(__dirname, '../dist', 'ant-design-mobile');
 
 	// const entry = args._.length > 0 ? path.resolve(args._[0]) : cwd;
 	const entry = distPath;
